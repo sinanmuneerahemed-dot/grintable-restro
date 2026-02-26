@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "id": "starters",
+      "title": "Starters",
+      "items": [
+        {
+          "name": "Truffle Mushroom Bruschetta",
+          "description": "Crisp artisan toast, sauteed mushrooms, truffle essence.",
+          "price": "$11",
+          "type": "veg"
+        },
+        {
+          "name": "Crispy Calamari Rings",
+          "description": "Lemon aioli dip with herb sea salt finish.",
+          "price": "$13",
+          "type": "non-veg"
+        },
+        {
+          "name": "Smoked Tomato Soup",
+          "description": "Velvety roasted tomato soup with basil oil.",
+          "price": "$9",
+          "type": "veg"
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "title": "Mains",
+      "items": [
+        {
+          "name": "Herb Grilled Salmon",
+          "description": "Atlantic salmon with citrus butter and greens.",
+          "price": "$24",
+          "type": "non-veg"
+        },
+        {
+          "name": "Wild Mushroom Risotto",
+          "description": "Creamy arborio rice, parmesan, woodland mushrooms.",
+          "price": "$19",
+          "type": "veg"
+        },
+        {
+          "name": "Charcoal Chicken Supreme",
+          "description": "Slow-charred chicken breast, garlic jus, seasonal mash.",
+          "price": "$22",
+          "type": "non-veg"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "title": "Drinks",
+      "items": [
+        {
+          "name": "Sparkling Citrus Cooler",
+          "description": "Fresh citrus blend with mint and tonic.",
+          "price": "$7",
+          "type": "veg"
+        },
+        {
+          "name": "Signature Cold Brew",
+          "description": "Slow-steeped coffee with vanilla cream.",
+          "price": "$6",
+          "type": "veg"
+        },
+        {
+          "name": "Pomegranate Spritz",
+          "description": "Pomegranate, lime and soda over ice.",
+          "price": "$8",
+          "type": "veg"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": "Desserts",
+      "items": [
+        {
+          "name": "Molten Cacao Lava",
+          "description": "Warm chocolate cake, center flow, vanilla bean cream.",
+          "price": "$10",
+          "type": "veg"
+        },
+        {
+          "name": "Caramelized Cheesecake",
+          "description": "Baked cheesecake with brûlée top and berry compote.",
+          "price": "$11",
+          "type": "veg"
+        },
+        {
+          "name": "Rose Pistachio Kulfi",
+          "description": "Traditional frozen dessert with rose and pistachio.",
+          "price": "$9",
+          "type": "veg"
+        }
+      ]
+    }
+  ]
+}

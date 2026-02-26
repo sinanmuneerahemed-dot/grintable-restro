@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations | Grin Table Restaurant</title>
+    <meta
+      name="description"
+      content="Reserve your table at Grin Table Restaurant in seconds. Submit your reservation details and continue on WhatsApp."
+    />
+    <meta property="og:title" content="Reservations | Grin Table Restaurant" />
+    <meta property="og:description" content="Reserve your table quickly through WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grintable.example.com/reservations/" />
+    <meta property="og:image" content="https://grintable.example.com/gallery/events-1.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script type="module" src="/assets/js/site.js"></script>
+    <script type="module" src="/assets/js/reservations.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Grin Table home">
+          <strong>Grin Table</strong>
+          <span>Every meal is a memory.</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+          <a href="/" data-nav-link>Home</a>
+          <a href="/menu/" data-nav-link>Menu</a>
+          <a href="/gallery/" data-nav-link>Gallery</a>
+          <a href="/reservations/" data-nav-link>Reservations</a>
+          <a href="/contact/" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-animate>Reserve Your Table</h1>
+          <p data-animate>
+            Fill in the form and we will open WhatsApp with your reservation details prefilled.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="form-card glass" data-animate>
+            <form class="form-grid" data-reservation-form>
+              <div class="field">
+                <label for="reservation-name">Name</label>
+                <input id="reservation-name" name="name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="reservation-phone">Phone</label>
+                <input id="reservation-phone" name="phone" type="tel" required />
+              </div>
+              <div class="form-grid-two">
+                <div class="field">
+                  <label for="reservation-date">Date</label>
+                  <input id="reservation-date" name="date" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="reservation-time">Time</label>
+                  <input id="reservation-time" name="time" type="time" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="reservation-guests">Guests</label>
+                <input id="reservation-guests" name="guests" type="number" min="1" max="40" required />
+              </div>
+              <div class="field">
+                <label for="reservation-notes">Notes</label>
+                <textarea id="reservation-notes" name="notes" rows="4" placeholder="Occasion, seating preference, allergies, etc."></textarea>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Reserve via WhatsApp</button>
+            </form>
+
+            <div class="contact-actions">
+              <a class="btn btn-secondary" data-phone-link>Call</a>
+              <a
+                class="btn btn-secondary"
+                data-whatsapp-link
+                data-whatsapp-message="Hi Grin Table, I want to reserve a table."
+              >
+                WhatsApp
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Grin Table Restaurant</h3>
+            <p>Every meal is a memory.</p>
+            <p><span data-address></span></p>
+            <p><a data-phone-link data-phone-text></a></p>
+          </div>
+          <div>
+            <div class="footer-links">
+              <a href="/menu/">Menu</a>
+              <a href="/gallery/">Gallery</a>
+              <a href="/reservations/">Reservations</a>
+              <a href="/contact/">Contact</a>
+              <a data-instagram-link>Instagram</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-bottom">© <span data-year></span> Grin Table Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

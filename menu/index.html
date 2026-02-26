@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Grin Table Restaurant</title>
+    <meta
+      name="description"
+      content="Browse Grin Table's menu across starters, mains, drinks, and desserts. Order each item instantly on WhatsApp."
+    />
+    <meta property="og:title" content="Menu | Grin Table Restaurant" />
+    <meta property="og:description" content="Explore the latest menu and order on WhatsApp." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grintable.example.com/menu/" />
+    <meta property="og:image" content="https://grintable.example.com/gallery/food-hero.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script type="module" src="/assets/js/site.js"></script>
+    <script type="module" src="/assets/js/menu.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Grin Table home">
+          <strong>Grin Table</strong>
+          <span>Every meal is a memory.</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+          <a href="/" data-nav-link>Home</a>
+          <a href="/menu/" data-nav-link>Menu</a>
+          <a href="/gallery/" data-nav-link>Gallery</a>
+          <a href="/reservations/" data-nav-link>Reservations</a>
+          <a href="/contact/" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-animate>Our Menu</h1>
+          <p data-animate>
+            Crafted with seasonal ingredients and signature flavors. Tap any item to place your order on
+            WhatsApp.
+          </p>
+          <div class="hero-actions" data-animate>
+            <a class="btn btn-primary" href="/menu.pdf" target="_blank" rel="noopener noreferrer">Download Menu PDF</a>
+            <a
+              class="btn btn-secondary"
+              data-whatsapp-link
+              data-whatsapp-message="Hi Grin Table, I'd like to place an order."
+            >
+              Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="chip-row" data-menu-chips aria-label="Menu categories"></div>
+          <div data-menu-container>
+            <div class="panel glass">Loading menu...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Grin Table Restaurant</h3>
+            <p>Every meal is a memory.</p>
+            <p><span data-address></span></p>
+            <p><a data-phone-link data-phone-text></a></p>
+          </div>
+          <div>
+            <div class="footer-links">
+              <a href="/menu/">Menu</a>
+              <a href="/gallery/">Gallery</a>
+              <a href="/reservations/">Reservations</a>
+              <a href="/contact/">Contact</a>
+              <a data-instagram-link>Instagram</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-bottom">© <span data-year></span> Grin Table Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

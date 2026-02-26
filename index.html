@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grin Table Restaurant | Every meal is a memory.</title>
+    <meta
+      name="description"
+      content="Grin Table Restaurant offers a premium dining experience with signature dishes, elegant ambience, and quick reservations on WhatsApp."
+    />
+    <meta property="og:title" content="Grin Table Restaurant" />
+    <meta
+      property="og:description"
+      content="Every meal is a memory. Explore the menu, reserve your table, and order on WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grintable.example.com/" />
+    <meta property="og:image" content="https://grintable.example.com/gallery/food-hero.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script type="module" src="/assets/js/site.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Grin Table home">
+          <strong>Grin Table</strong>
+          <span>Every meal is a memory.</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+          <a href="/" data-nav-link>Home</a>
+          <a href="/menu/" data-nav-link>Menu</a>
+          <a href="/gallery/" data-nav-link>Gallery</a>
+          <a href="/reservations/" data-nav-link>Reservations</a>
+          <a href="/contact/" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-animate>
+            <p class="kicker">Premium Dining Experience</p>
+            <h1>Grin Table Restaurant</h1>
+            <p class="lead">
+              Where refined flavors, warm hospitality, and memorable evenings come together. Every meal is
+              a memory.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/menu/">View Menu</a>
+              <a
+                class="btn btn-secondary"
+                href="/reservations/"
+                data-whatsapp-link
+                data-whatsapp-message="Hi Grin Table, I want to reserve a table."
+              >
+                Reserve on WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="hero-media glass panel" data-animate aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="quick-strip">
+        <div class="container quick-grid">
+          <article class="quick-card glass" data-animate>
+            <h3>Opening Hours</h3>
+            <p data-opening-hours></p>
+          </article>
+          <article class="quick-card glass" data-animate>
+            <h3>Phone</h3>
+            <p><a data-phone-link data-phone-text></a></p>
+          </article>
+          <article class="quick-card glass" data-animate>
+            <h3>Location</h3>
+            <p data-address></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-head" data-animate>
+            <h2>Signature Highlights</h2>
+            <p>Chef-curated favorites made for sharing and celebration.</p>
+          </header>
+          <div class="highlight-grid">
+            <article class="highlight-card glass" data-animate>
+              <img src="/gallery/food-1.svg" alt="Truffle mushroom bruschetta" loading="lazy" decoding="async" />
+              <div class="highlight-card-content">
+                <h3>Truffle Bruschetta</h3>
+                <p>Toasted artisan bread, wild mushrooms, truffle oil drizzle.</p>
+              </div>
+            </article>
+            <article class="highlight-card glass" data-animate>
+              <img src="/gallery/food-2.svg" alt="Herb grilled salmon dish" loading="lazy" decoding="async" />
+              <div class="highlight-card-content">
+                <h3>Herb Grilled Salmon</h3>
+                <p>Flame-kissed salmon served with citrus butter and greens.</p>
+              </div>
+            </article>
+            <article class="highlight-card glass" data-animate>
+              <img src="/gallery/dessert-1.svg" alt="Molten chocolate dessert" loading="lazy" decoding="async" />
+              <div class="highlight-card-content">
+                <h3>Molten Cacao Lava</h3>
+                <p>Warm chocolate center with vanilla bean cream.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-head" data-animate>
+            <h2>Gallery Preview</h2>
+            <p>A quick look at ambience, food, and events.</p>
+          </header>
+          <div class="gallery-preview-grid">
+            <a href="/gallery/" data-animate><img src="/gallery/ambience-1.svg" alt="Restaurant ambience view one" loading="lazy" decoding="async" /></a>
+            <a href="/gallery/" data-animate><img src="/gallery/food-3.svg" alt="Plated gourmet dish" loading="lazy" decoding="async" /></a>
+            <a href="/gallery/" data-animate><img src="/gallery/events-1.svg" alt="Restaurant event setup" loading="lazy" decoding="async" /></a>
+            <a href="/gallery/" data-animate><img src="/gallery/ambience-2.svg" alt="Restaurant interior lighting" loading="lazy" decoding="async" /></a>
+            <a href="/gallery/" data-animate><img src="/gallery/food-4.svg" alt="Special chef dish" loading="lazy" decoding="async" /></a>
+            <a href="/gallery/" data-animate><img src="/gallery/events-2.svg" alt="Celebration table arrangement" loading="lazy" decoding="async" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <article class="panel glass review-card" data-animate>
+            <h2>Guests Love Grin Table</h2>
+            <p class="review-stars" aria-label="Rated 4.8 out of 5 stars">★★★★★</p>
+            <p>
+              Read authentic guest reviews and share your experience after your visit.
+            </p>
+            <div>
+              <a class="btn btn-primary" data-reviews-link>View Google Reviews</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Grin Table Restaurant</h3>
+            <p>Every meal is a memory.</p>
+            <p><span data-address></span></p>
+            <p><a data-phone-link data-phone-text></a></p>
+          </div>
+          <div>
+            <div class="footer-links">
+              <a href="/menu/">Menu</a>
+              <a href="/gallery/">Gallery</a>
+              <a href="/reservations/">Reservations</a>
+              <a href="/contact/">Contact</a>
+              <a data-instagram-link>Instagram</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-bottom">© <span data-year></span> Grin Table Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

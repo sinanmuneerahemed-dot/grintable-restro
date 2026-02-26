@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Grin Table Restaurant</title>
+    <meta
+      name="description"
+      content="Explore the Grin Table gallery featuring ambience, signature dishes, and private event moments."
+    />
+    <meta property="og:title" content="Gallery | Grin Table Restaurant" />
+    <meta property="og:description" content="View ambience, food, and event photos from Grin Table." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grintable.example.com/gallery/" />
+    <meta property="og:image" content="https://grintable.example.com/gallery/ambience-1.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script type="module" src="/assets/js/site.js"></script>
+    <script type="module" src="/assets/js/gallery.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Grin Table home">
+          <strong>Grin Table</strong>
+          <span>Every meal is a memory.</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+          <a href="/" data-nav-link>Home</a>
+          <a href="/menu/" data-nav-link>Menu</a>
+          <a href="/gallery/" data-nav-link>Gallery</a>
+          <a href="/reservations/" data-nav-link>Reservations</a>
+          <a href="/contact/" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-animate>Gallery</h1>
+          <p data-animate>
+            Discover the mood, flavors, and moments that define Grin Table Restaurant.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="gallery-filter-row" data-animate>
+            <button class="chip is-active" type="button" data-gallery-filter="all" aria-pressed="true">
+              All
+            </button>
+            <button class="chip" type="button" data-gallery-filter="ambience" aria-pressed="false">
+              Ambience
+            </button>
+            <button class="chip" type="button" data-gallery-filter="food" aria-pressed="false">
+              Food
+            </button>
+            <button class="chip" type="button" data-gallery-filter="events" aria-pressed="false">
+              Events
+            </button>
+          </div>
+          <div class="gallery-grid" data-gallery-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Image viewer">
+      <div class="lightbox-inner">
+        <img data-lightbox-image src="" alt="" />
+        <div class="lightbox-meta">
+          <p data-lightbox-caption></p>
+          <div class="lightbox-actions">
+            <button class="icon-btn" type="button" data-lightbox-prev aria-label="Previous image">←</button>
+            <button class="icon-btn" type="button" data-lightbox-next aria-label="Next image">→</button>
+            <button class="icon-btn" type="button" data-lightbox-close aria-label="Close viewer">✕</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Grin Table Restaurant</h3>
+            <p>Every meal is a memory.</p>
+            <p><span data-address></span></p>
+            <p><a data-phone-link data-phone-text></a></p>
+          </div>
+          <div>
+            <div class="footer-links">
+              <a href="/menu/">Menu</a>
+              <a href="/gallery/">Gallery</a>
+              <a href="/reservations/">Reservations</a>
+              <a href="/contact/">Contact</a>
+              <a data-instagram-link>Instagram</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-bottom">© <span data-year></span> Grin Table Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

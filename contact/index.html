@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Grin Table Restaurant</title>
+    <meta
+      name="description"
+      content="Contact Grin Table Restaurant for reservations, orders, and directions. Reach us by phone, WhatsApp, or Instagram."
+    />
+    <meta property="og:title" content="Contact | Grin Table Restaurant" />
+    <meta property="og:description" content="Call, WhatsApp, or get directions to Grin Table Restaurant." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grintable.example.com/contact/" />
+    <meta property="og:image" content="https://grintable.example.com/gallery/ambience-2.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script type="module" src="/assets/js/site.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Grin Table home">
+          <strong>Grin Table</strong>
+          <span>Every meal is a memory.</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="nav-menu" data-nav-menu aria-label="Main navigation">
+          <a href="/" data-nav-link>Home</a>
+          <a href="/menu/" data-nav-link>Menu</a>
+          <a href="/gallery/" data-nav-link>Gallery</a>
+          <a href="/reservations/" data-nav-link>Reservations</a>
+          <a href="/contact/" data-nav-link>Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 data-animate>Contact Us</h1>
+          <p data-animate>
+            We are happy to help with table reservations, private events, and direct orders.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <article class="contact-card glass" data-animate>
+            <h2>Visit Grin Table</h2>
+            <p><strong>Address:</strong> <span data-address></span></p>
+            <p><strong>Phone:</strong> <a data-phone-link data-phone-text></a></p>
+            <p><strong>Email:</strong> hello@grintable.example.com</p>
+            <p><strong>Hours:</strong> <span data-opening-hours></span></p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" data-phone-link>Call</a>
+              <a
+                class="btn btn-secondary"
+                data-whatsapp-link
+                data-whatsapp-message="Hi Grin Table, I'd like to know more about reservations and orders."
+              >
+                WhatsApp
+              </a>
+              <a class="btn btn-secondary" data-directions-link>Directions</a>
+              <a class="btn btn-secondary" data-instagram-link>Instagram</a>
+            </div>
+          </article>
+
+          <article class="contact-card glass" data-animate>
+            <h2>Find Us on Map</h2>
+            <p>Replace the placeholder map link with your exact location before launch.</p>
+            <iframe
+              class="map-frame"
+              title="Grin Table location map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              data-map-embed
+            ></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Grin Table Restaurant</h3>
+            <p>Every meal is a memory.</p>
+            <p><span data-address></span></p>
+            <p><a data-phone-link data-phone-text></a></p>
+          </div>
+          <div>
+            <div class="footer-links">
+              <a href="/menu/">Menu</a>
+              <a href="/gallery/">Gallery</a>
+              <a href="/reservations/">Reservations</a>
+              <a href="/contact/">Contact</a>
+              <a data-instagram-link>Instagram</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer-bottom">© <span data-year></span> Grin Table Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

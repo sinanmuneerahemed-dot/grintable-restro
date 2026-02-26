@@ -1,0 +1,58 @@
+{
+  "images": [
+    {
+      "src": "/gallery/ambience-1.svg",
+      "alt": "Warm candle-lit dining interior",
+      "title": "Ambient Evening Dining",
+      "category": "ambience"
+    },
+    {
+      "src": "/gallery/ambience-2.svg",
+      "alt": "Elegant seating and warm wall lighting",
+      "title": "Intimate Lounge Corner",
+      "category": "ambience"
+    },
+    {
+      "src": "/gallery/food-1.svg",
+      "alt": "Plated truffle mushroom starter",
+      "title": "Truffle Starter",
+      "category": "food"
+    },
+    {
+      "src": "/gallery/food-2.svg",
+      "alt": "Grilled salmon plated with garnish",
+      "title": "Grilled Salmon",
+      "category": "food"
+    },
+    {
+      "src": "/gallery/food-3.svg",
+      "alt": "Signature main course plating",
+      "title": "Chef Signature Plate",
+      "category": "food"
+    },
+    {
+      "src": "/gallery/food-4.svg",
+      "alt": "Close-up of gourmet plated dish",
+      "title": "Artful Presentation",
+      "category": "food"
+    },
+    {
+      "src": "/gallery/dessert-1.svg",
+      "alt": "Chocolate dessert with sauce drizzle",
+      "title": "Dessert Finale",
+      "category": "food"
+    },
+    {
+      "src": "/gallery/events-1.svg",
+      "alt": "Private event setup with floral tables",
+      "title": "Private Celebration",
+      "category": "events"
+    },
+    {
+      "src": "/gallery/events-2.svg",
+      "alt": "Celebration table arrangement",
+      "title": "Event Moments",
+      "category": "events"
+    }
+  ]
+}
